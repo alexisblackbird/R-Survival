@@ -1,0 +1,10 @@
+Package: Survival.Game
+Title: To-Do And Self-Care Based Survival Game
+Version: 0.1
+Authors@R: person("Alexis", "Strazds", email = "strazdsa@yorku.ca", role = c("aut", "cre"))
+Description: A simple survival game where you progress and survive by doing recurring daily, weekly, and monthly to-dos and taking care of yourself by cleaning and going for walks.
+Depends: R (>= 3.3.2)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
