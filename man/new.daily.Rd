@@ -4,12 +4,12 @@
 \alias{new.daily}
 \title{New Daily}
 \usage{
-new.daily(type, name)
+new.daily(name, type)
 }
 \arguments{
-\item{type}{sets which type of reward is granted for completing the daily. Valid types are "walk", "clean", "mana", "none"}
-
 \item{name}{sets the name of the task. Must be a short string.}
+
+\item{type}{sets which type of reward is granted for completing the daily. Valid types are "walk", "clean", "mana", "none"}
 }
 \description{
 Creates a new daily task
@@ -19,6 +19,7 @@ Walk-type dailies apply the \code{\link{scavenge}} action automatically when com
 }
 \seealso{
 Other task configuration: \code{\link{defaults}},
-  \code{\link{new.monthly}}, \code{\link{new.weekly}}
+  \code{\link{delete.daily}}, \code{\link{delete.monthly}},
+  \code{\link{delete.weekly}}, \code{\link{new.monthly}},
+  \code{\link{new.weekly}}
 }
-

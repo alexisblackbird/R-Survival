@@ -15,7 +15,8 @@ defaults(name, enabled = FALSE)
 Disables / Enables default dailies, monthlies, and weeklies.
 }
 \seealso{
-Other task configuration: \code{\link{new.daily}},
+Other task configuration: \code{\link{delete.daily}},
+  \code{\link{delete.monthly}},
+  \code{\link{delete.weekly}}, \code{\link{new.daily}},
   \code{\link{new.monthly}}, \code{\link{new.weekly}}
 }
-

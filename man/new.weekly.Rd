@@ -14,6 +14,7 @@ Creates a new weekly task
 }
 \seealso{
 Other task configuration: \code{\link{defaults}},
-  \code{\link{new.daily}}, \code{\link{new.monthly}}
+  \code{\link{delete.daily}}, \code{\link{delete.monthly}},
+  \code{\link{delete.weekly}}, \code{\link{new.daily}},
+  \code{\link{new.monthly}}
 }
-

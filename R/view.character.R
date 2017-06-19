@@ -170,7 +170,7 @@ view.character <- function(){
     print(noquote(paste0("Mana:")))
     print(noquote(paste0("[", mb1, mb2, mb3, mb4, mb5, mb6, mb7, mb8, mb9, mb10, "] ", stats$mana, "/", stats$max.mana)))
   }
-  print(noquote(paste0("Momentum: ", stats$momentum, "  Squallor: ", stats$squallor)))
+  print(noquote(paste0("Momentum: ", stats$momentum, "  Squalor: ", stats$squalor)))
   print(noquote(paste0("Food: ", stats$food, "  Fuel: ", stats$fuel)))
 }
   
