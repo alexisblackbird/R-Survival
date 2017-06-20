@@ -5,6 +5,7 @@
 #' This function starts a new game, setting all values to the default and saving them to the directory and file specified by the location argument. 
 #' @param day Sets the current day for use in \code{\link{run.day}}. Must be in lowercase. Defaults to "monday"
 #' @param location Sets the save file location and name, e.g. "C:/Users/.../Survival Game/survivalsave.csv". Must be .csv format.
+#' @seealso \code{\link{defaults}} for task configuration \code{\link{run.day}} for processing daily changes \code{\link{load.game}} for loading your game
 #' @export
 
 new.game <- function(location, day = "monday"){
@@ -97,12 +98,13 @@ new.game <- function(location, day = "monday"){
   nmonthlies <- 0
   nmonthlies.done <- 0
   regencount <- 0
+  version <- 0.1
   stats <<- data.frame(day, health, max.health, level, max.health, squalor, squalor.tolerance, momentum, food, food.need, fuel, mana, max.mana, experience, max.experience, levelup, 
                        building.materials, tech.materials, rare.materials, magic.materials, construction.points, cleaned, warmth, building.cabin, building.surivalshelter, spell.lesserheal,
                        dailyd1.done, dailyd1.name, dailyd1.type, dailyd1.used, dailyd2.done, dailyd2.name, dailyd2.used, dailyd2.type, dailyd3.done, dailyd3.name, dailyd3.type, dailyd3.used,
                        dailyd4.done, dailyd4.name, dailyd4.type, dailyd4.used, weeklyd1.done, weeklyd1.name, weeklyd1.used, weeklyd2.done, weeklyd2.name, weeklyd2.used,
                        weeklyd3.done, weeklyd3.name, weeklyd3.used, monthlyd1.done, monthlyd1.name, ndailies, ndailies.done, nweeklies.done, nweeklies,
-                       nmonthlies, nmonthlies.done, regencount)
+                       nmonthlies, nmonthlies.done, regencount, version)
   savespot <<- location
   write.csv(stats, savespot)
   

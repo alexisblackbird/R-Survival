@@ -17,4 +17,6 @@ Starts a new game, saved at the specified location.
 \details{
 This function starts a new game, setting all values to the default and saving them to the directory and file specified by the location argument.
 }
-
+\seealso{
+\code{\link{defaults}} for task configuration \code{\link{run.day}} for processing daily changes \code{\link{load.game}} for loading your game
+}

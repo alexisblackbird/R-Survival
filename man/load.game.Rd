@@ -4,10 +4,12 @@
 \alias{load.game}
 \title{Load Game}
 \usage{
-load.game(location)
+load.game(location, update = TRUE)
 }
 \arguments{
 \item{location}{Sets the save file location and name, e.g. "C:/Users/.../Survival Game/survivalsave.csv". Must be .csv format.}
+
+\item{update}{Determines whether the save file will be automatically updated to the latest version. Defaults to \code{TRUE}.}
 }
 \description{
 Loads the game from the specified file.
@@ -15,4 +17,3 @@ Loads the game from the specified file.
 \details{
 Loads the game from the specified file and sets that as the save spot for all updates. Note that the game auto-saves whenever changes are made.
 }
-
