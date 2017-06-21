@@ -103,7 +103,7 @@ new.game <- function(location, day = "monday"){
                        building.materials, tech.materials, rare.materials, magic.materials, construction.points, cleaned, warmth, building.cabin, building.surivalshelter, spell.lesserheal,
                        dailyd1.done, dailyd1.name, dailyd1.type, dailyd1.used, dailyd2.done, dailyd2.name, dailyd2.used, dailyd2.type, dailyd3.done, dailyd3.name, dailyd3.type, dailyd3.used,
                        dailyd4.done, dailyd4.name, dailyd4.type, dailyd4.used, weeklyd1.done, weeklyd1.name, weeklyd1.used, weeklyd2.done, weeklyd2.name, weeklyd2.used,
-                       weeklyd3.done, weeklyd3.name, weeklyd3.used, monthlyd1.done, monthlyd1.name, ndailies, ndailies.done, nweeklies.done, nweeklies,
+                       weeklyd3.done, weeklyd3.name, weeklyd3.used, monthlyd1.done, monthlyd1.name, monthlyd1.used, ndailies, ndailies.done, nweeklies.done, nweeklies,
                        nmonthlies, nmonthlies.done, regencount, version)
   savespot <<- location
   write.csv(stats, savespot)
