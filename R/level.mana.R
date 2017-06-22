@@ -4,16 +4,13 @@
 #' @export
 
 level.mana <- function(){
-  attach(stats)
-  if(levelup > 0){
-    stats$max.mana <<- max.mana + 1
-    stats$mana <<- mana + 1
-    stats$levelup <<- levelup - 1
+  if(stats$levelup > 0){
+    stats$max.mana <<- stats$max.mana + 1
+    stats$mana <<- stats$mana + 1
+    stats$levelup <<- stats$levelup - 1
     write.csv(stats, savespot)
-    detach(stats)
     return("Your max mana has increased.")
   }else{
-    detach(stats)
     return("You don't have an available level up to spend.")
   }
 }

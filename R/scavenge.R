@@ -10,10 +10,9 @@
 #' @export
 
 scavenge <- function(x = 15){ #works with no argument, in which case it assumes 15 (the smallest increment that gives a bonus)
-  attach(stats)
   scavpool1 <- c("nothing", "food", "food", "food", "fuel", "fuel")
   scavpool2 <- c(scavpool1, "material")
-  scav.points <- sample(0:3, size = 1) + momentum + floor(x / 15) #The scavenge sample range is a good candidate for expanding later.
+  scav.points <- sample(0:3, size = 1) + stats$momentum + floor(x / 15) #The scavenge sample range is a good candidate for expanding later.
   scav.something <- 0
   scav.found <- c()
   while(scav.points > 1){
@@ -58,7 +57,6 @@ scavenge <- function(x = 15){ #works with no argument, in which case it assumes 
       scav.something <- 1
     }
     write.csv(stats, savespot)
-    detach(stats)
   }
   if(scav.something == 0){
     print("You found nothing.")

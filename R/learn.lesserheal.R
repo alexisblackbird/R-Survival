@@ -6,15 +6,15 @@
 #' @export
 
 learn.lesserheal <- function(){
-  attach(stats)
-  if(levelup > 0 && max.mana > 0){
-    stats$levelup <<- levelup - 1
+  if(stats$spell.lesserheal == 1){
+    return("You already know this spell.")
+  }
+  if(stats$levelup > 0 && stats$max.mana > 0){
+    stats$levelup <<- stats$levelup - 1
     stats$spell.lesserheal <<- 1
     write.csv(stats, savespot)
-    detach(stats)
     return("You have learned to cast Lesser Heal.")
   } else {
-    detach(stats)
     return("You don't meet the requirements to learn this spell.")
   }
 }

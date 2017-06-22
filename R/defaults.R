@@ -7,7 +7,6 @@
 #' @family task configuration
 
 defaults <- function(name, enabled = FALSE){
-  attach(stats)
   if(enabled == FALSE){
     if(name == "walk"){
       stats$dailyd1.used <<- FALSE
@@ -33,7 +32,6 @@ defaults <- function(name, enabled = FALSE){
                   if(name == "deep clean"){
                     stats$monthlyd1.used <<- FALSE
                   } else {
-                    detach(stats)
                     return("Invalid name.")
                   }
                 }
@@ -69,7 +67,6 @@ defaults <- function(name, enabled = FALSE){
                   if(name == "deep clean"){
                     stats$monthlyd1.used <<- TRUE
                   } else {
-                    detach(stats)
                     return("Invalid name.")
                   }
                 }
@@ -81,6 +78,5 @@ defaults <- function(name, enabled = FALSE){
     }
   }
   write.csv(stats, savespot)
-  detach(stats)
   return("Default tasks settings updated.")
 }
