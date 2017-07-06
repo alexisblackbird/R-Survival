@@ -10,5 +10,6 @@ view.character()
 Displays information about your character's stats and essential supplies.
 }
 \seealso{
-Other display: \code{\link{view.tasks}}
+Other display: \code{\link{view.buildings}},
+  \code{\link{view.tasks}}
 }

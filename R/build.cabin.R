@@ -3,6 +3,7 @@
 #' Builds a warm house.
 #'
 #' Costs 20 building materials and 6 construction points. Provides a home which will keep you warm on approximately two thirds of nights.
+#' @family buildings
 #' @export
 
 build.cabin <- function(){

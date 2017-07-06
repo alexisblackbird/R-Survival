@@ -12,4 +12,7 @@ Builds a simple survival shelter.
 \details{
 Costs 2 building materials and 1 construction point. Provides a little shelter which will keep you warm on approximately a third of nights.
 }
-
+\seealso{
+Other buildings: \code{\link{build.cabin}},
+  \code{\link{view.buildings}}
+}
