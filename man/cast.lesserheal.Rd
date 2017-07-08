@@ -9,4 +9,7 @@ cast.lesserheal()
 \description{
 Spend one mana to speed up health regeneration a bit.
 }
-
+\seealso{
+Other spells: \code{\link{learn.lesserheal}},
+  \code{\link{view.spells}}
+}

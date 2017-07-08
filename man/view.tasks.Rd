@@ -11,5 +11,5 @@ Displays tasks and if they have been completed or not.
 }
 \seealso{
 Other display: \code{\link{view.buildings}},
-  \code{\link{view.character}}
+  \code{\link{view.character}}, \code{\link{view.spells}}
 }

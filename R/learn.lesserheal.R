@@ -3,6 +3,7 @@
 #' Spends a level up to learn the spell Lesser Heal.
 #' 
 #' Requires one mana to learn and cast. Heals one point of health.
+#' @family spells
 #' @export
 
 learn.lesserheal <- function(){

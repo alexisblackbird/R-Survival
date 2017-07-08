@@ -14,6 +14,7 @@ view.buildings <- function(available = FALSE){
     print(noquote("Buildings Available:"))
   }
   if((available == FALSE && stats$building.survivalshelter == 1)||(available == TRUE && stats$building.survivalshelter == 0)){
+    print(noquote(""))
     print(noquote("Survival Shelter"))
     if(available == TRUE){
       print(noquote("Cost: 2 building materials, 1 construction point"))
@@ -21,6 +22,7 @@ view.buildings <- function(available = FALSE){
     print(noquote("Helps protect you from the elements, so you won't need to use fuel every night."))
   }
   if((available == FALSE && stats$building.cabin == 1)||(available == TRUE && stats$building.cabin == 0)){
+    print(noquote(""))
     print(noquote("Cabin"))
     if(available == TRUE){
       print(noquote("Cost: 20 building materials, 6 construction points"))

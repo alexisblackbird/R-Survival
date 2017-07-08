@@ -14,7 +14,7 @@ Displays a list of buildings constructed or available for construction.
 }
 \seealso{
 Other display: \code{\link{view.character}},
-  \code{\link{view.tasks}}
+  \code{\link{view.spells}}, \code{\link{view.tasks}}
 
 Other buildings: \code{\link{build.cabin}},
   \code{\link{build.survivalshelter}}

@@ -12,4 +12,7 @@ Spends a level up to learn the spell Lesser Heal.
 \details{
 Requires one mana to learn and cast. Heals one point of health.
 }
-
+\seealso{
+Other spells: \code{\link{cast.lesserheal}},
+  \code{\link{view.spells}}
+}

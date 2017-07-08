@@ -1,6 +1,7 @@
 #' Cast Lesser Heal
 #' 
 #' Spend one mana to speed up health regeneration a bit.
+#' @family spells
 #' @export
 
 cast.lesserheal <- function(){
@@ -12,7 +13,7 @@ cast.lesserheal <- function(){
       stats$regencount <<- stats$regencount + 3
       stats$mana <<- stats$mana - 1
       write.csv(stats, savespot)
-      return("You cast Lesser Heal.")
+      return("You cast Lesser Heal. You will regenerate a health point sooner now.")
     } else {
       return("You don't have the mana to cast this spell.")
     }
