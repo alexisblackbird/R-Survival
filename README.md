@@ -6,7 +6,7 @@ Version: 0.2
 
 ## Getting Started
 
-Install in r by using `devtools::install_github("alexisblackbird/rsurvival")` and load the package using `library("rsurvival")`
+Install in r by using `devtools::install_github("alexisblackbird/rsurvival@*release")` and load the package using `library("rsurvival")`
 
 Start a new game by using `new.game()` See the documentation by typing `?new.game()` for more details. You can use a question mark before any function to see its documentation in R.
 
