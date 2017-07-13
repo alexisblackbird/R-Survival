@@ -7,7 +7,7 @@
 new.game(location, day = "monday")
 }
 \arguments{
-\item{location}{Sets the save file location and name, e.g. "C:/Users/.../Survival Game/survivalsave.csv". Must be .csv format.}
+\item{location}{Sets the save file location and name, e.g. "C:/Users/.../rsurvival/rsurvivalsave.csv". Must be .csv format.}
 
 \item{day}{Sets the current day for use in \code{\link{run.day}}. Must be in lowercase. Defaults to "monday"}
 }

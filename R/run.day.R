@@ -110,7 +110,7 @@ run.day <- function(endmonth = FALSE){
     }
   }
   if(stats$health < 0){
-    print("The struggle has proven too much. It is hard to grow while suffering so much. Perhaps, however, with time you will regain your feet.")
+    print("You ran out of health. Your experience has been reset. Things may be hard, but please don't give up! You can keep going.")
     stats$experience <<- 0
     stats$health <<- 5
   }

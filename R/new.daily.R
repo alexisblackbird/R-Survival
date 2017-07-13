@@ -10,7 +10,7 @@
 #' @export
 
 new.daily <- function(name, type){ # Creates a new daily. Needs a type and name (short string)
-  if(name == "walk" || name == "tidy" || name == "meditate"){
+  if(name == "walk" || name == "tidy" || name == "meditate" || name == "meds"){
     return("That name is reserved for a default daily. Please choose a different name, or just use the default daily.")
   }
   if(type == "walk" || type == "clean" || type == "mana" || type == "none"){
